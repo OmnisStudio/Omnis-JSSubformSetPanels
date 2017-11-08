@@ -1,0 +1,5 @@
+Calculate lSeparators as $root.$prefs.$separators()
+Calculate iFPSep as mid(lSeparators,3,1)     ;; function parameter separator
+
+;  open forms on first call to evFormLayoutChanged in $event
+;  Do method openSubForms

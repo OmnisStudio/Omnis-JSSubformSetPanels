@@ -1,0 +1,6 @@
+;  Enter your initialization code here
+
+Calculate iFormID as pFormID
+Calculate iText as pText
+
+Do $cinst.$forecolor.$assign(pColor)

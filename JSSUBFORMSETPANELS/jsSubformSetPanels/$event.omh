@@ -1,0 +1,5 @@
+On evLayoutChanged
+	If not(iFormsOpened)
+		Do method openSubForms
+		Calculate iFormsOpened as kTrue
+	End If

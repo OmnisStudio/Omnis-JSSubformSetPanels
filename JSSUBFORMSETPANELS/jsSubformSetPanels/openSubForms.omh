@@ -1,0 +1,9 @@
+Do lFormList.$define(lFormID,lClassName,lFormParams,lFormTitle,lFormLeft,lFormTop,lFormWidth,lFormHeight)
+Do lFormList.$add(1,'jsSubformSetPanelsSubForm',con(1,iFPSep,rgb(221,221,255),iFPSep,chr(34),"This is panel 1",chr(34)),'Panel 1',,,,160)
+Do lFormList.$add(2,'jsSubformSetPanelsSubForm',con(2,iFPSep,rgb(204,204,255),iFPSep,chr(34),"This is panel 2",chr(34)),'Panel 2',,,,160)
+Do lFormList.$add(3,'jsSubformSetPanelsSubForm',con(3,iFPSep,rgb(187,187,255),iFPSep,chr(34),"This is panel 3",chr(34)),'Panel 3',,,,160)
+Do lFormList.$add(4,'jsSubformSetPanelsSubForm',con(4,iFPSep,rgb(170,170,255),iFPSep,chr(34),"This is panel 4",chr(34)),'Panel 4',,,,160)
+
+Do lSetRow.$define(lSetName,lParent,lFlags,lOrderVar,lFormList)
+Do lSetRow.$assigncols("SubformPanelsSet",'PagedPane:1',kSFSflagSingleOpen+kSFSflagMinButton+kSFSflagAutoLayout+kSFSflagParentWidth,'iOpenForms',lFormList)
+Do $cinst.$clientcommand("subformset_add",lSetRow)
